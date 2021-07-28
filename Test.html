@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+    </style>
 </head>
 <body>
-<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="KingCrimson.js"></script>
-
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script src="KingCrimson.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#ImButton").click(function (){
+            KingCrimson(false)
+        })
+    })
+</script>
 </body>
 <button class = "KingCrimson" data-href="https://bilibili.com" data-blank="true" data-boss ="true">我是按钮</button>
 <button class = "KingCrimson" data-href="https://bilibili.com" data-blank="true">仅音效</button>
@@ -17,4 +25,4 @@
 <a class = "KingCrimson" data-href="https://bilibili.com" href="#">不打开新页面</a>
 <B style="font-size: x-large"><xmp><a class = "KingCrimson" data-href="https://bilibili.com" data-blank="true" data-boss ="true" href="#">我是超链接</a></xmp></B>
 <B style="font-size: x-large"><xmp><a class = "KingCrimson" data-href="https://bilibili.com"  href="#">不打开新页面且只有音效</a></xmp></B>
-</html>
+<button id = "ImButton">我是按钮，我绑定了触发事件</button>
